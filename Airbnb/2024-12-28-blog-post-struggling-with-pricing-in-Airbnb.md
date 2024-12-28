@@ -85,7 +85,7 @@ R-squared score: 0.34 – This means the model explains about 34% of price varia
 The scatter plot below shows predicted vs. actual prices. Notice the clear upward trend – proof that the model captures price patterns, even if it misses some high-end outliers.
 
 
-Visualization:
+![Alt text](Screenshot%202024-12-28%20181535.png)
 
 
 
