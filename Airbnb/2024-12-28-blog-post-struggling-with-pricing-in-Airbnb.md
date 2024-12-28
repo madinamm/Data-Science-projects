@@ -35,16 +35,7 @@ Does the number of bedrooms, property type, or neighborhood have the biggest imp
 
 We analyzed a dataset from Airbnb Amsterdam (September 2024), packed with details about listings – from the number of bedrooms to guest ratings.
 
-For simplicity, we focused on the most impactful factors:
-
-Number of bedrooms
-
-Guest capacity (accommodates)
-
-Room type (Private room, Shared room, Entire home)
-
-Review scores and total reviews
-
+For simplicity, we focused on the most impactful factors: Number of bedrooms, Guest capacity (accommodates), Room type (Private room, Shared room, Entire home), Review scores, total reviews and more.
 
 Using linear regression, we built a pricing model to predict how much a listing should cost.
 
@@ -105,7 +96,7 @@ Struggling with empty dates? Competitive pricing, based on real data, could impr
 
 ## Where We Can Improve
 
-Luxury listings throw off predictions. Expanding the model to include more qualitative factors (like location) could help.
+Luxury listings throw off predictions. Expanding the model to include more qualitative factors could help.
 
 Beyond Amsterdam – Applying this to listings in other cities could reveal broader insights.
 
@@ -119,4 +110,4 @@ Better use of reviews – Analyzing review content, not just scores, might offer
 
 Pricing an Airbnb doesn’t have to be a shot in the dark. By analyzing real data, we’ve created a roadmap for smarter, more profitable pricing. Whether you’re setting your first price or updating an existing listing, these insights can help you find the sweet spot.
 
-Want to dive deeper into the data? Check out the full project on GitHub.
+Want to dive deeper into the data? Check out the full project on [GitHub](https://github.com/madinamm/Data-Science-projects/blob/main/Airbnb/Data_Science_Blog_Post.ipynb).
