@@ -1,5 +1,7 @@
 # Struggling to Price Your Airbnb Listing in Amsterdam? Here’s What the Data Says
 
+![Alt text](Blog_post_image1.jpeg)
+
 ## Introduction: Why Is Pricing So Hard?
 
 Ever found yourself second-guessing the price of your Airbnb listing? Too high, and the calendar stays empty. Too low, and you’re leaving money on the table. Pricing an Airbnb can feel like a guessing game – but it doesn’t have to be.
