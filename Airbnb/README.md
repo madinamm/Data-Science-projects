@@ -24,4 +24,7 @@ Additional insights:
 - Private room type has the highest negative correlation to prices (as a context other room types are: Hotel room, Shared room types, Entire home/apt);
 - Number of reviews have negative small correlation to price, while review scores themselves have a positive correlation to prices, indicating that the higher the review the higher price could be generally for the selected listings. Potentially properties with high number of reviews are listed for more frequent rent and thus are not being considered as an expensive property.
 
+## Acknowledgments
+Dataset credits: Inside Airbnb team (Major contributors: Murray Cox, John Morris, Taylor Higgins), Dataset for Amsterdam, North Holland, The Netherlands, 05 September, 2024.
+
 This Analysis was made possible thanks to the courtesy of Airbnb in sharing Amsterdam listings data and a great content of Udacity Nanodegree program.
