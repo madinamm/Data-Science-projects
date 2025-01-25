@@ -1,17 +1,18 @@
 # Disaster Response Pipeline Project
 
 ### Project Summary
-The main purpose of this project is to analyze messages in social media during disasters, process and classify those message into 36 categories (e.g. Earthquake, Fire, Floods etc.) so that the relevant disaster relief agencies will be informed and react on-time. The final output is an app, which classifies messages into the relevant categories based on the inputted message and can be used by an employee from a disaster relief agency. In this project for training purposes, disaster messages from social media in the past and categories were used.
+The main purpose of this project is to analyze messages in social media during disasters, process and classify those message into 36 categories (e.g. Earthquake, Fire, Floods etc.) so that the relevant disaster relief agencies will be informed and react on-time. The final output can be used in an app, which classifies messages into the relevant categories based on the inputted message, e.g. which can be used by an employee from a disaster relief agency. 
+In this project the following data has been used for training purposes: disaster messages from social media and categories.
 The project consists of 3 parts:
 - ETL Pipeline that cleans original messages and categories csv-s used for training purposes and stores them in a database;
 - ML Pipeline that trains a classifier;
-- final user-friendly app, where any disaster message can be inputted and categorization will be performed as per above steps.
+- final user-friendly app, where any disaster message can be inputted and categorization will be performed as per above steps by the app.
 
-The database used was provided by Appen (formerly Figure 8) to Udacity Nanodegree students. This project was built with the support and as part of my learning journey within Udacity Nano degree program.
+The database used for training purposes was provided by Appen (formerly Figure 8) to Udacity Nanodegree students. This project was built with the support and as part of my learning journey within Udacity Nano degree program.
 
 ### Instructions:
 
-General Note: all the files should be placed in one folder, with one exception which has a folder: `template` folder with 2 html files.
+General Note: all the files should be placed in one folder, with one exception for HTML files which has a folder: `templates`.
 
 1. Run the following commands in the project's root directory to set up your database and model.
 
@@ -41,14 +42,12 @@ All required files are in 1 folder, except HTML files required for the app, whic
     - DisasterResponse.db
     Screenshot example of a successful pipeline:
     - 1. Screenshot - Data Load logs.png
-    
-ML Pipeline and NB:    
+    ML Pipeline and NB:    
     - ML Pipeline Preparation.ipynb
     - train_classifier.py
     Output from ML Pipeline in pkl file:
     - classifier.pkl
-
-App results:
+    App results:
     - run.py
     - `templates` folder:
       a. go.html
