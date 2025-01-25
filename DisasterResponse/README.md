@@ -42,13 +42,13 @@ All required files are in 1 folder, except HTML files required for the app, whic
     Screenshot example of a successful pipeline:
     - 1. Screenshot - Data Load logs.png
     
-    ML Pipeline and NB:    
+ML Pipeline and NB:    
     - ML Pipeline Preparation.ipynb
     - train_classifier.py
     Output from ML Pipeline in pkl file:
     - classifier.pkl
 
-    App results:
+App results:
     - run.py
     - `templates` folder:
       a. go.html
