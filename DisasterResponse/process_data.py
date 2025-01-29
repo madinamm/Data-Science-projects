@@ -3,14 +3,29 @@ import pandas as pd
 from sqlalchemy import create_engine
 
 def load_data(messages_filepath, categories_filepath):
-    """Load and merge messages and categories datasets"""
+    """Load and merge messages and categories datasets.
+
+    Args:
+        messages_filepath (str): Path to the messages CSV file.
+        categories_filepath (str): Path to the categories CSV file.
+
+    Returns:
+        pd.DataFrame: Merged DataFrame containing messages and categories.
+    """
     messages = pd.read_csv(messages_filepath)
     categories = pd.read_csv(categories_filepath)
     df = pd.merge(messages, categories, on='id')
     return df
 
 def clean_data(df):
-    """Clean the merged dataframe"""
+    """Clean the merged dataframe by splitting categories and converting values.
+
+    Args:
+        df (pd.DataFrame): Merged DataFrame containing messages and categories.
+
+    Returns:
+        pd.DataFrame: Cleaned DataFrame with separate category columns.
+    """
     # Split the categories into separate columns
     categories = df['categories'].str.split(';', expand=True)
     
@@ -35,6 +50,9 @@ def clean_data(df):
     # Drop duplicates
     df = df.drop_duplicates()
 
+    # Remove rows where the 'related' column is equal to 2 (as it is a binary column)
+    df = df[df['related'] != 2]
+
     # Reset the index and add a new index column
     df.reset_index(drop=True, inplace=True)
     df['index'] = df.index  # Add a new column with the current index values
@@ -42,11 +60,17 @@ def clean_data(df):
     return df
 
 def save_data(df, database_filename):
-    """Save the cleaned data to a database"""
+    """Save the cleaned data to a database.
+
+    Args:
+        df (pd.DataFrame): Cleaned DataFrame to be saved.
+        database_filename (str): Path to the database file.
+    """
     engine = create_engine('sqlite:///' + database_filename)
     df.to_sql('Message', engine, index=False, if_exists='replace')
 
 def main():
+    """Main function to load, clean, and save data."""
     if len(sys.argv) == 4:
         messages_filepath, categories_filepath, database_filepath = sys.argv[1:]
 
