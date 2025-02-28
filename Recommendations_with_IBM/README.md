@@ -11,4 +11,4 @@ This project aims to develop a recommendation system for articles on the IBM Wat
 - **Matrix Factorization**: Utilize Singular Value Decomposition (SVD) to predict user interactions with articles.
 
 ### Acknowledgments
-This Analysis was made possible thanks to the courtesy of IBM Watson Studio for providing the platform and dataset and a content of Udacity Nanodegree program.
+This Analysis was made possible thanks to the courtesy of IBM Watson Studio for providing the platform and dataset and a content of Udacity Nanodegree program (including Knowledge Hub).
