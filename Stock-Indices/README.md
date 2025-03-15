@@ -36,3 +36,6 @@ Data was sourced from [Investing.com](https://www.investing.com/indices/major-in
 
 ## Conclusion
 This project highlights the potential for using machine learning in financial forecasting, particularly in identifying predictable stock indices. The insights gained can assist investors in making informed decisions and optimizing their investment strategies.
+
+## Blog post
+Relevant Blog post can be found here https://medium.com/@mmadeyeva/stock-indices-prediction-a-machine-learning-approach-97122565242a
